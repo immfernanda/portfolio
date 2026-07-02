@@ -48,16 +48,18 @@ window.addEventListener("load", () => moveGlider(document.querySelector(".tab.is
 window.addEventListener("resize", () => moveGlider(document.querySelector(".tab.is-active")));
 
 // ── Som nos vídeos dos bastidores (clique pra ouvir) ──
-document.querySelectorAll(".bastidores__grid video").forEach((v) => {
+document.querySelectorAll(".window--som video").forEach((v) => {
   v.addEventListener("click", () => {
     const ligar = v.muted;
     // silencia os outros pra não tocar tudo junto
-    document.querySelectorAll(".bastidores__grid video").forEach((outro) => {
+    document.querySelectorAll(".window--som video").forEach((outro) => {
       outro.muted = true;
       outro.closest(".window").classList.remove("is-sound");
     });
     v.muted = !ligar;
+    v.volume = 1;
     v.closest(".window").classList.toggle("is-sound", !v.muted);
+    if (!v.muted) v.play();
   });
 });
 
