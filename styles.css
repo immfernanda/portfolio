@@ -296,7 +296,7 @@ img, video { display: block; max-width: 100%; }
   margin: 1.8rem 0 1.4rem;
 }
 .stats li { display: flex; flex-direction: column; }
-.stats b { font-size: clamp(1.6rem, 3.5vw, 2.4rem); color: var(--wine); }
+.stats b { font-family: var(--font-display); font-weight: 640; font-size: clamp(1.7rem, 3.6vw, 2.5rem); color: var(--wine); line-height: 1.15; }
 .stats span { font-size: 0.82rem; color: var(--ink-soft); }
 .sobre__brands { font-size: 0.9rem !important; border-top: 1px dashed var(--ink-soft); padding-top: 1.1rem; }
 .sobre__brands b { color: var(--ink); }
@@ -369,7 +369,7 @@ img, video { display: block; max-width: 100%; }
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 .card:hover { transform: translateY(-6px); box-shadow: 0 16px 0 -8px var(--orange); }
-.card--destaque { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.card--destaque { background: var(--ink); color: var(--paper); border-color: var(--ink); grid-column: 1 / -1; }
 .card--destaque h3 { color: var(--paper-2); }
 .card--destaque:hover { box-shadow: 0 16px 0 -8px var(--pink); }
 .card__num { font-size: 0.7rem; color: var(--pink); }
