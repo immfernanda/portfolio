@@ -130,3 +130,20 @@ if (!reduceMotion && parallaxEls.length) {
   }, { passive: true });
   atualizar();
 }
+
+// ── Vídeos só carregam e tocam quando aparecem na tela (site mais leve) ──
+const videoObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const v = entry.target;
+      if (entry.isIntersecting) {
+        if (v.preload === "none") v.preload = "auto";
+        v.play().catch(() => {});
+      } else {
+        v.pause();
+      }
+    });
+  },
+  { rootMargin: "200px 0px" }
+);
+document.querySelectorAll("video[data-lazy]").forEach((v) => videoObserver.observe(v));

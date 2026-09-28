@@ -27,7 +27,7 @@ portfolio/
 
 1. **Hero** — estrelinha desenhada à mão e manchas de cor desfocadas no fundo; nome, frase "Eu faço sua marca ser encontrada e te ajudo em toda a jornada do seu cliente." e colagem de polaroids intercalando fotos pessoais e de trabalho (mesmo tamanho, zoom no hover).
 2. **Marquee** — faixa animada com as ferramentas e habilidades.
-3. **Sobre mim** — rolo de filme: a foto no espelho aparece em P&B e, ao passar o mouse (no celular, com um toque), a cor vai surgindo aos poucos a partir do centro enquanto os furos do filme rodam. O arquivo `foto-espelho.jpeg` deve ser a versão colorida; o P&B é aplicado via CSS. Texto sobre dados + criatividade, trabalho humanizado e em equipe. Estatísticas em cards com contador animado: +4 anos, +10 marcas, +1 mi de views e 300 mil curtidas em um único post.
+3. **Sobre mim** — rolo de filme: a foto no espelho aparece em P&B e, ao passar o mouse (no celular, com um toque), a cor vai surgindo devagar e por igual (transição de filtro) enquanto os furos do filme rodam. O arquivo `foto-espelho.jpeg` deve ser a versão colorida; o P&B é aplicado via CSS. Texto sobre dados + criatividade, trabalho humanizado e em equipe. Estatísticas em cards com contador animado: +4 anos, +10 marcas, +1 mi de views e 300 mil curtidas em um único post.
 4. **Diferenciais** — seis cards em efeito vidro (glass) sobre manchas de cor desfocadas, com um olho desenhado à mão que pisca.
 5. **Trabalhos** — duas abas (performance & dados / conteúdo & criativo) com cards de serviços. Selo pixel "eu conserto! 🔨".
 6. **Projetos** — prova real: posts publicados (Pelvic, gastronomia, Acquafit) e card de equipe com foto do Grupo Boticário.
@@ -37,7 +37,7 @@ portfolio/
 10. **Funil + Contato** — as quatro etapas do trabalho (ser encontrada, encantar, converter, crescer com dados) com o botão de WhatsApp como ponta do funil. Um botão flutuante de WhatsApp acompanha a página inteira. Todos os "fala comigo" levam direto pro WhatsApp com mensagem pronta.
 11. **Rodapé** — logo, navegação e contatos (WhatsApp e LinkedIn).
 
-Em todas as seções há manchas de cor desfocadas com parallax leve e poucos rabiscos de estrela feitos à mão (acenando, sonolenta e pulando).
+Os vídeos só carregam e tocam quando aparecem na tela, e as fotos são comprimidas (até ~1000px). Em todas as seções há manchas de cor (gradientes radiais, sem filtro de blur) com parallax leve e poucos rabiscos de estrela feitos à mão (acenando, sonolenta e pulando).
 
 ## Identidade visual
 
