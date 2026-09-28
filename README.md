@@ -25,16 +25,17 @@ portfolio/
 
 ## Seções do site
 
-1. **Hero** — nome, frase "Eu faço sua marca ser encontrada e te ajudo em toda a jornada do seu cliente." e colagem de polaroids intercalando fotos pessoais e de trabalho (mesmo tamanho, zoom no hover).
+1. **Hero** — estrelinha desenhada à mão e manchas de cor desfocadas no fundo; nome, frase "Eu faço sua marca ser encontrada e te ajudo em toda a jornada do seu cliente." e colagem de polaroids intercalando fotos pessoais e de trabalho (mesmo tamanho, zoom no hover).
 2. **Marquee** — faixa animada com as ferramentas e habilidades.
 3. **Sobre mim** — rolo de filme: a foto no espelho aparece em P&B e, ao passar o mouse (no celular, com um toque), o filme corre para a mesma foto colorida. O arquivo `foto-espelho.jpeg` deve ser a versão colorida; o P&B é aplicado via CSS. Texto sobre dados + criatividade, trabalho humanizado e em equipe. Estatísticas em cards com contador animado: +4 anos, +10 marcas, +1 mi de views e 300 mil curtidas em um único post.
-4. **Trabalhos** — duas abas (performance & dados / conteúdo & criativo) com cards de serviços. Selo pixel "eu conserto! 🔨".
-5. **Projetos** — prova real: posts publicados (Pelvic, gastronomia, Acquafit) e card de equipe com foto do Grupo Boticário.
-6. **Bastidores** — vídeos autorais em janelinhas retrô. Os dois do meio têm áudio: basta clicar pra ouvir (clicar de novo silencia; só um toca por vez).
-7. **Experiência** — linha do tempo profissional (Action+, Petit, Grupo Boticário, MedSul) e formação.
-8. **Depoimentos** — aguardando os relatos reais (textos de exemplo por enquanto).
-9. **Funil + Contato** — as quatro etapas do trabalho (ser encontrada, encantar, converter, crescer com dados) com o botão de WhatsApp como ponta do funil. Um botão flutuante de WhatsApp acompanha a página inteira. Todos os "fala comigo" levam direto pro WhatsApp com mensagem pronta.
-10. **Rodapé** — logo, navegação e contatos (WhatsApp, LinkedIn e e-mail).
+4. **Diferenciais** — seis cards em efeito vidro (glass) sobre manchas de cor desfocadas, com um olho desenhado à mão que pisca.
+5. **Trabalhos** — duas abas (performance & dados / conteúdo & criativo) com cards de serviços. Selo pixel "eu conserto! 🔨".
+6. **Projetos** — prova real: posts publicados (Pelvic, gastronomia, Acquafit) e card de equipe com foto do Grupo Boticário.
+7. **Bastidores** — vídeos autorais em janelinhas retrô. Os dois do meio têm áudio: basta clicar pra ouvir (clicar de novo silencia; só um toca por vez).
+8. **Experiência** — linha do tempo profissional (Action+, Petit, Grupo Boticário, MedSul) e formação.
+9. **Depoimentos** — aguardando os relatos reais (textos de exemplo por enquanto).
+10. **Funil + Contato** — as quatro etapas do trabalho (ser encontrada, encantar, converter, crescer com dados) com o botão de WhatsApp como ponta do funil. Um botão flutuante de WhatsApp acompanha a página inteira. Todos os "fala comigo" levam direto pro WhatsApp com mensagem pronta.
+11. **Rodapé** — logo, navegação e contatos (WhatsApp, LinkedIn e e-mail).
 
 ## Identidade visual
 
