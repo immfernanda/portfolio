@@ -92,12 +92,12 @@
         <div class="window__bar"><span></span><span></span><span></span><i>rolo_01.jpg</i></div>
         <div class="film">
           <div class="film__track">
-            <div class="film__frame">
+            <div class="film__frame film__frame--pb">
               <img src="assets/foto-espelho.jpeg" alt="Fernanda Camargo fotografando em frente ao espelho, com tripé e iluminação de estúdio" loading="lazy" />
               <span class="film__num pixel">01A</span>
             </div>
             <div class="film__frame">
-              <img src="assets/foto-fernanda.jpeg" alt="Fernanda Camargo sorrindo com a câmera Canon na mão" loading="lazy" />
+              <img src="assets/foto-espelho.jpeg" alt="" loading="lazy" />
               <span class="film__num pixel">02A</span>
             </div>
           </div>
@@ -122,10 +122,10 @@
         se constrói <strong>em equipe</strong>, tratando gente como gente, na frente e atrás das câmeras.
       </p>
       <ul class="stats reveal">
-        <li><b>+4</b><span>anos de experiência</span></li>
-        <li><b>+10</b><span>marcas atendidas</span></li>
-        <li><b>+1 mi</b><span>de views em um único post</span></li>
-        <li><b>300 mil</b><span>curtidas nesse mesmo post</span></li>
+        <li><b data-count="4" data-prefix="+">+4</b><span>anos de experiência</span></li>
+        <li><b data-count="10" data-prefix="+">+10</b><span>marcas atendidas</span></li>
+        <li><b data-count="1" data-prefix="+" data-suffix=" mi">+1 mi</b><span>de views em um único post</span></li>
+        <li><b data-count="300" data-suffix=" mil">300 mil</b><span>curtidas nesse mesmo post</span></li>
       </ul>
       <p class="sobre__brands reveal">
         por onde passei: <b>Grupo Boticário</b> · <b>Action Films</b> · <b>Petit Comunicação</b> · <b>MedSul Saúde</b>
@@ -350,16 +350,14 @@
         <span class="funil__num pixel">04</span>
         <div><h3>Crescer com dados</h3><p>Relatórios que viram decisão: o que funcionou, o que ajustar e onde investir mais.</p></div>
       </li>
-    </ol>
-
-    <div class="cta reveal">
-      <p class="cta__kicker pixel">bora conversar? <span class="star">✦</span></p>
-      <a class="btn-wa" href="https://wa.me/5541989009040?text=Oi%2C%20Fernanda!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20a%20minha%20marca." target="_blank" rel="noopener">
+      <li class="funil__cta">
+        <a class="btn-wa" href="https://wa.me/5541989009040?text=Oi%2C%20Fernanda!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20a%20minha%20marca." target="_blank" rel="noopener">
         <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4Zm6-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>
         <span>me chama no WhatsApp</span>
       </a>
-      <p class="cta__note">resposta rápida, sem formulário e sem enrolação</p>
-    </div>
+        <p class="cta__note">resposta rápida, sem formulário e sem enrolação</p>
+      </li>
+    </ol>
   </section>
 
   <!-- ══════════ RODAPÉ ══════════ -->
@@ -388,6 +386,12 @@
       <a href="#topo">voltar ao topo ↑</a>
     </div>
   </footer>
+
+  <!-- ══════════ WHATSAPP FLUTUANTE ══════════ -->
+  <a class="wa-float" href="https://wa.me/5541989009040?text=Oi%2C%20Fernanda!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20a%20minha%20marca." target="_blank" rel="noopener" aria-label="Falar com a Fernanda no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3Zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.7-5.8C5.1 9.9 10 5.2 16 5.2s10.9 4.7 10.9 10.6S22 26.4 16 26.4Zm6-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3Z"/></svg>
+    <span class="wa-float__label">fala comigo</span>
+  </a>
 
   <script src="script.js"></script>
 </body>

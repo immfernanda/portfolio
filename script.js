@@ -83,3 +83,31 @@ navLinks.querySelectorAll("a").forEach((link) =>
 document.querySelectorAll(".window--film").forEach((film) => {
   film.addEventListener("click", () => film.classList.toggle("is-rolled"));
 });
+
+// ── Números do Sobre sobem de 0 até o valor quando aparecem na tela ──
+const counters = document.querySelectorAll("[data-count]");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const countObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      countObserver.unobserve(el);
+      if (reduceMotion) return;
+      const alvo = Number(el.dataset.count);
+      const prefixo = el.dataset.prefix || "";
+      const sufixo = el.dataset.suffix || "";
+      const duracao = 1400;
+      const inicio = performance.now();
+      const passo = (agora) => {
+        const t = Math.min((agora - inicio) / duracao, 1);
+        const valor = Math.round(alvo * (1 - Math.pow(1 - t, 3)));
+        el.textContent = `${prefixo}${valor}${sufixo}`;
+        if (t < 1) requestAnimationFrame(passo);
+      };
+      requestAnimationFrame(passo);
+    });
+  },
+  { threshold: 0.6 }
+);
+counters.forEach((el) => countObserver.observe(el));
