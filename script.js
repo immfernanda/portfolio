@@ -111,3 +111,22 @@ const countObserver = new IntersectionObserver(
   { threshold: 0.6 }
 );
 counters.forEach((el) => countObserver.observe(el));
+
+// ── Parallax leve: manchas e rabiscos andam num ritmo diferente do scroll ──
+const parallaxEls = document.querySelectorAll("[data-parallax]");
+if (!reduceMotion && parallaxEls.length) {
+  let ticking = false;
+  const atualizar = () => {
+    const meio = window.innerHeight / 2;
+    parallaxEls.forEach((el) => {
+      const r = el.parentElement.getBoundingClientRect();
+      const distancia = r.top + r.height / 2 - meio;
+      el.style.setProperty("--py", `${(distancia * Number(el.dataset.parallax)).toFixed(1)}px`);
+    });
+    ticking = false;
+  };
+  window.addEventListener("scroll", () => {
+    if (!ticking) { requestAnimationFrame(atualizar); ticking = true; }
+  }, { passive: true });
+  atualizar();
+}
