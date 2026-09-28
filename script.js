@@ -78,3 +78,8 @@ navLinks.querySelectorAll("a").forEach((link) =>
     navLinks.classList.remove("is-open");
   })
 );
+
+// ── Rolo de filme (toque no celular, onde não existe hover) ──
+document.querySelectorAll(".window--film").forEach((film) => {
+  film.addEventListener("click", () => film.classList.toggle("is-rolled"));
+});

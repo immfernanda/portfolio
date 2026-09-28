@@ -25,15 +25,16 @@ portfolio/
 
 ## Seções do site
 
-1. **Hero** — nome, frase "Eu faço sua marca ser encontrada." e colagem de polaroids intercalando fotos pessoais e de trabalho (mesmo tamanho, zoom no hover).
+1. **Hero** — nome, frase "Eu faço sua marca ser encontrada e te ajudo em toda a jornada do seu cliente." e colagem de polaroids intercalando fotos pessoais e de trabalho (mesmo tamanho, zoom no hover).
 2. **Marquee** — faixa animada com as ferramentas e habilidades.
-3. **Sobre mim** — foto no espelho com tripé, texto sobre dados + criatividade, trabalho humanizado e em equipe. Estatísticas: +4 anos de experiência, +10 marcas atendidas.
+3. **Sobre mim** — rolo de filme: a foto no espelho (P&B) corre para uma foto colorida ao passar o mouse (no celular, com um toque). Texto sobre dados + criatividade, trabalho humanizado e em equipe. Estatísticas em cards: +4 anos, +10 marcas, +1 mi de views e 300 mil curtidas em um único post.
 4. **Trabalhos** — duas abas (performance & dados / conteúdo & criativo) com cards de serviços. Selo pixel "eu conserto! 🔨".
 5. **Projetos** — prova real: posts publicados (Pelvic, gastronomia, Acquafit) e card de equipe com foto do Grupo Boticário.
 6. **Bastidores** — vídeos autorais em janelinhas retrô. Os dois do meio têm áudio: basta clicar pra ouvir (clicar de novo silencia; só um toca por vez).
 7. **Experiência** — linha do tempo profissional (Action+, Petit, Grupo Boticário, MedSul) e formação.
 8. **Depoimentos** — aguardando os relatos reais (textos de exemplo por enquanto).
-9. **Contato** — e-mail, WhatsApp e LinkedIn.
+9. **Funil + Contato** — as quatro etapas do trabalho (ser encontrada, encantar, converter, crescer com dados) e um botão gigante de WhatsApp. Todos os "fala comigo" levam direto pro WhatsApp com mensagem pronta.
+10. **Rodapé** — logo, navegação e contatos (WhatsApp, LinkedIn e e-mail).
 
 ## Identidade visual
 
