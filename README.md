@@ -39,6 +39,18 @@ portfolio/
 
 Os vídeos só carregam e tocam quando aparecem na tela, e as fotos são comprimidas (até ~1000px). Em todas as seções há manchas de cor (gradientes radiais, sem filtro de blur) com parallax leve e poucos rabiscos de estrela feitos à mão (acenando, sonolenta e pulando).
 
+## Orçamentos (área escondida)
+
+A pasta `orcamentos/` guarda propostas comerciais. Elas **não aparecem no menu do portfólio** e têm `noindex`, então não vão para o Google. Quem tem o link consegue abrir, por isso cada arquivo leva um sufixo aleatório no nome.
+
+```
+orcamentos/
+├── orcamento.css               → visual compartilhado (tabela, funil, resumo, versão PDF)
+└── mari-mercado-q7m4.html      → proposta da Mari (conteúdo + tráfego com funil)
+```
+
+Para um orçamento novo: duplique um arquivo, troque o nome (ex.: `cliente-x9k2.html`) e edite textos e valores. O botão "salvar como PDF" no fim da página gera a versão para enviar.
+
 ## Identidade visual
 
 | Elemento | Valor |

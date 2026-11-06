@@ -1,0 +1,169 @@
+/* ═══════════════════════════════════════════
+   Orçamentos · Fernanda Camargo
+   Base compartilhada por todas as propostas
+   ═══════════════════════════════════════════ */
+
+:root {
+  --paper: #efe5d3;
+  --paper-2: #f7f0e3;
+  --ink: #2a1e16;
+  --ink-soft: #5b4a3d;
+  --wine: #8e2b25;
+  --orange: #d95b29;
+  --pink: #d6336c;
+  --line: #2a1e16;
+  --font-display: "Fraunces", serif;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-pixel: "Silkscreen", monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.55;
+  padding: clamp(1rem, 4vw, 3rem) 16px;
+}
+
+.folha {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--paper-2);
+  border: 1.5px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(1.4rem, 5vw, 3.2rem);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
+.logo { font-family: var(--font-display); font-weight: 600; font-size: 1.15rem; }
+.logo .star { color: var(--orange); }
+.meta { font-family: var(--font-pixel); font-size: 0.7rem; text-align: right; color: var(--ink-soft); }
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 350;
+  font-size: clamp(2.4rem, 8vw, 3.8rem);
+  line-height: 1.05;
+  margin: 2rem 0 0.4rem;
+}
+.para { font-size: 1.05rem; color: var(--ink-soft); }
+.para strong { color: var(--ink); }
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 2.6rem 0 0.9rem;
+}
+h2 small { font-family: var(--font-body); font-weight: 400; font-size: 0.9rem; color: var(--ink-soft); }
+
+.eyebrow {
+  font-family: var(--font-pixel);
+  font-size: 0.72rem;
+  color: var(--pink);
+  display: block;
+  margin-top: 2.6rem;
+}
+.eyebrow + h2 { margin-top: 0.3rem; }
+
+p + p { margin-top: 0.7rem; }
+
+/* ── Tabela no estilo das propostas ─────── */
+.tabela-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; font-size: 0.95rem; }
+th {
+  background: var(--ink);
+  color: var(--paper-2);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+td { border: 1px solid var(--line); padding: 0.9rem 1rem; vertical-align: middle; }
+td:first-child { text-align: center; width: 28%; }
+td:last-child { text-align: center; width: 20%; white-space: nowrap; font-weight: 600; }
+td ul { padding-left: 1.1rem; }
+td li + li { margin-top: 0.15rem; }
+td .sub { display: block; font-weight: 400; font-size: 0.8rem; color: var(--ink-soft); }
+tr.total td { background: var(--paper); font-weight: 700; }
+tr.total td:first-child { text-align: right; }
+
+/* ── Funil ─────────────────────────────── */
+.funil { display: grid; gap: 0.7rem; margin-top: 0.4rem; }
+.etapa {
+  margin: 0 auto;
+  width: 100%;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.3rem 1rem;
+}
+.etapa:nth-child(2) { width: 92%; }
+.etapa:nth-child(3) { width: 84%; }
+.etapa:nth-child(4) { width: 76%; background: var(--ink); color: var(--paper-2); }
+.etapa:nth-child(4) .etapa__tag { color: var(--orange); }
+.etapa__tag { font-family: var(--font-pixel); font-size: 0.68rem; color: var(--pink); grid-column: 1 / -1; }
+.etapa h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; }
+.etapa__verba { font-weight: 700; text-align: right; white-space: nowrap; }
+.etapa__verba small { display: block; font-weight: 400; font-size: 0.78rem; opacity: 0.8; }
+.etapa p { grid-column: 1 / -1; font-size: 0.92rem; }
+
+.nota {
+  margin-top: 1.2rem;
+  border-left: 4px solid var(--orange);
+  background: var(--paper);
+  padding: 0.9rem 1.1rem;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.93rem;
+}
+
+.lista { padding-left: 1.2rem; }
+.lista li + li { margin-top: 0.35rem; }
+
+.resumo {
+  margin-top: 2.6rem;
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.resumo div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.8rem 1.1rem; border-bottom: 1px solid var(--line); }
+.resumo div:last-child { border-bottom: 0; background: var(--ink); color: var(--paper-2); font-weight: 700; font-size: 1.1rem; }
+.resumo span:last-child { white-space: nowrap; font-weight: 600; }
+
+.rodape { margin-top: 2.4rem; font-size: 0.9rem; color: var(--ink-soft); }
+.rodape strong { color: var(--ink); }
+
+.acoes { max-width: 860px; margin: 1.4rem auto 0; text-align: center; }
+.acoes button {
+  font: inherit;
+  font-family: var(--font-pixel);
+  font-size: 0.8rem;
+  background: var(--orange);
+  color: #fff;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+@media (max-width: 560px) {
+  .etapa:nth-child(n) { width: 100%; }
+  td { padding: 0.7rem; }
+  .meta { text-align: left; }
+}
+
+/* ── Impressão / salvar como PDF ───────── */
+@media print {
+  @page { margin: 12mm; }
+  body { background: #fff; padding: 0; }
+  .folha { box-shadow: none; border: 0; padding: 0; max-width: none; }
+  .acoes { display: none; }
+  .etapa, tr, .resumo, .nota { break-inside: avoid; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
