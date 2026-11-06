@@ -61,6 +61,24 @@ body::after {
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
 @media (min-width: 720px) { .wrap { padding: 0 32px; } }
 
+/* luz de fundo que respira */
+.pulse {
+  position: fixed;
+  z-index: -1;
+  width: 70vmax; height: 70vmax;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(closest-side, rgba(47, 91, 255, 0.45), rgba(47, 91, 255, 0.12) 55%, transparent);
+  animation: respira 7s ease-in-out infinite;
+}
+.pulse--a { top: -30vmax; right: -20vmax; }
+.pulse--b { bottom: -40vmax; left: -25vmax; animation-delay: -3.5s; }
+@keyframes respira {
+  0%, 100% { opacity: 0.35; transform: scale(0.92); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; opacity: 0.7; } }
+
 /* ── Topo ─────────────────────────────── */
 .nav {
   display: flex;
@@ -119,11 +137,7 @@ body::after {
   overflow: hidden;
 }
 .glass--glow { border-color: rgba(127, 168, 255, 0.55); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 0 1px rgba(127, 168, 255, 0.15), 0 0 60px -10px rgba(47, 91, 255, 0.55); }
-.glass--glow::after {
-  content: ""; position: absolute; left: 10%; right: 10%; bottom: -40%; height: 60%;
-  background: radial-gradient(closest-side, rgba(91, 140, 255, 0.55), transparent);
-  pointer-events: none;
-}
+
 .glass--solid { background: linear-gradient(160deg, #2f5bff, #1b2fa8 70%); border-color: rgba(255, 255, 255, 0.25); }
 .glass--solid p, .glass--solid .kpi__label { color: rgba(238, 242, 255, 0.82); }
 
@@ -188,8 +202,9 @@ body::after {
 .split span { font-size: 0.82rem; color: var(--muted); }
 
 /* ── Calendário semanal ───────────────── */
-.weeks { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 820px) { .weeks { grid-template-columns: repeat(4, 1fr); } }
+.weeks { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.week { min-width: 0; }
+@media (min-width: 820px) { .weeks { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .week { padding: 1.2rem; }
 .week__title { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .week__items { display: grid; gap: 8px; margin-top: 0.9rem; }
@@ -272,3 +287,26 @@ footer strong { color: var(--text); }
   .section { break-inside: auto; }
   .hero { padding-top: 1.5rem; }
 }
+
+/* logos de plataforma no lugar do ícone */
+.card__icon--logo { background: rgba(255, 255, 255, 0.06); }
+.card__icon--logo svg { width: 26px; height: 26px; }
+.card__icon--logo[title="Meta"] svg { width: 30px; height: 30px; }
+
+/* ── Investimento ─────────────────────── */
+.price { padding: clamp(1.4rem, 3.5vw, 2rem); display: flex; flex-direction: column; }
+.price__label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--glow); }
+.price h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; margin-top: 0.6rem; }
+.price__value { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 5vw, 2.8rem); letter-spacing: -0.04em; line-height: 1; margin-top: 1.2rem; }
+.price__value small { font-size: 0.95rem; font-weight: 500; letter-spacing: 0; color: var(--muted); }
+.price__old { text-decoration: line-through; color: var(--muted); font-size: 1rem; margin-top: 1.1rem; }
+.price__badge { display: inline-block; margin-top: 0.5rem; font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 999px; background: rgba(127, 168, 255, 0.18); border: 1px solid rgba(127, 168, 255, 0.5); color: var(--ice); align-self: flex-start; }
+.price .checks { margin-top: 1.3rem; }
+.totals { display: grid; gap: 16px; margin-top: 16px; }
+@media (min-width: 820px) { .totals { grid-template-columns: 1fr 1fr; } }
+.total { padding: 1.4rem 1.6rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.total span { color: var(--muted); font-size: 0.9rem; display: block; }
+.total strong { font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
+.total b { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.3rem); font-weight: 600; letter-spacing: -0.04em; }
+.glass--solid.total span { color: rgba(238, 242, 255, 0.85); }
+.nota-preco { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 1rem; }
