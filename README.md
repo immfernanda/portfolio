@@ -46,7 +46,7 @@ A pasta `orcamentos/` guarda propostas comerciais. Elas **não aparecem no menu 
 ```
 orcamentos/
 ├── orcamento.css               → visual compartilhado (tabela, funil, resumo, versão PDF)
-└── mari-mercado-q7m4.html      → proposta da Mari (conteúdo + tráfego com funil)
+└── maria-educacao-financeira-q7m4.html → proposta da Maria (conteúdo orgânico + tráfego)
 ```
 
 Para um orçamento novo: duplique um arquivo, troque o nome (ex.: `cliente-x9k2.html`) e edite textos e valores. O botão "salvar como PDF" no fim da página gera a versão para enviar.
