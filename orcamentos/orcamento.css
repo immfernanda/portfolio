@@ -289,9 +289,7 @@ footer strong { color: var(--text); }
 }
 
 /* logos de plataforma no lugar do ícone */
-.card__icon--logo { background: rgba(255, 255, 255, 0.06); }
-.card__icon--logo svg { width: 26px; height: 26px; }
-.card__icon--logo[title="Meta"] svg { width: 30px; height: 30px; }
+.card__icon--meta svg { width: 26px; height: 26px; }
 
 /* ── Investimento ─────────────────────── */
 .price { padding: clamp(1.4rem, 3.5vw, 2rem); display: flex; flex-direction: column; }
@@ -299,6 +297,7 @@ footer strong { color: var(--text); }
 .price h3 { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; margin-top: 0.6rem; }
 .price__value { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 5vw, 2.8rem); letter-spacing: -0.04em; line-height: 1; margin-top: 1.2rem; }
 .price__value small { font-size: 0.95rem; font-weight: 500; letter-spacing: 0; color: var(--muted); }
+.price__value--sm { font-size: 1.5rem; margin-top: 0.7rem; color: var(--ice); }
 .price__old { text-decoration: line-through; color: var(--muted); font-size: 1rem; margin-top: 1.1rem; }
 .price__badge { display: inline-block; margin-top: 0.5rem; font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.7rem; border-radius: 999px; background: rgba(127, 168, 255, 0.18); border: 1px solid rgba(127, 168, 255, 0.5); color: var(--ice); align-self: flex-start; }
 .price .checks { margin-top: 1.3rem; }
