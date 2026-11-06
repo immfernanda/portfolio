@@ -154,8 +154,16 @@ tr.total td:first-child { text-align: right; }
 
 @media (max-width: 560px) {
   .etapa:nth-child(n) { width: 100%; }
-  td { padding: 0.7rem; }
   .meta { text-align: left; }
+  thead { display: none; }
+  table, tbody, tr, td { display: block; width: 100% !important; }
+  tr { border: 1px solid var(--line); border-top: 0; }
+  tr:first-child { border-top: 1px solid var(--line); }
+  td { border: 0; padding: 0.5rem 0.9rem; text-align: left !important; white-space: normal !important; }
+  td:first-child { background: var(--ink); color: var(--paper-2); font-weight: 600; }
+  td:first-child .sub { color: var(--paper); margin-left: 0.3rem; display: inline; }
+  td:last-child { font-size: 1.05rem; padding-bottom: 0.8rem; }
+  tr.total td:first-child { text-align: left !important; background: var(--ink); color: var(--paper-2); }
 }
 
 /* ── Impressão / salvar como PDF ───────── */
