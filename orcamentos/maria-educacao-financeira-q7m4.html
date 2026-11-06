@@ -14,6 +14,9 @@
 </head>
 <body>
 
+  <span class="pulse pulse--a" aria-hidden="true"></span>
+  <span class="pulse pulse--b" aria-hidden="true"></span>
+
   <div class="wrap">
 
     <!-- ══════════ TOPO ══════════ -->
@@ -37,18 +40,18 @@
         </div>
         <div class="glass kpi">
           <span class="kpi__chip">Por mês</span>
-          <div class="kpi__num">11</div>
+          <div class="kpi__num">7</div>
           <div class="kpi__label">peças estáticas e carrosséis</div>
         </div>
         <div class="glass kpi">
           <span class="kpi__chip">Instagram</span>
-          <div class="kpi__num">3x</div>
+          <div class="kpi__num">2x</div>
           <div class="kpi__label">publicações por semana no perfil</div>
         </div>
         <div class="glass glass--glow kpi">
           <span class="kpi__chip">Meta Ads</span>
-          <div class="kpi__num">15</div>
-          <div class="kpi__label">dias entre cada revisão dos anúncios</div>
+          <div class="kpi__num">1x</div>
+          <div class="kpi__label">por semana: revisão e relatório dos anúncios</div>
         </div>
       </div>
     </section>
@@ -63,10 +66,10 @@
 
       <div class="grid-2">
         <article class="glass card">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></div>
+          <div class="card__icon card__icon--logo" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="url(#ig)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="ig" x1="0" y1="24" x2="24" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".35" stop-color="#fa7e1e"/><stop offset=".6" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#d62976" stroke="none"/></svg></div>
           <span class="card__eyebrow">Frente 1 · Instagram orgânico</span>
           <h3>Calendário de 4 semanas</h3>
-          <p>Toda semana: 1 vídeo e 2 posts estáticos (carrossel ou imagem), com análises de mercado, economia e educação financeira.</p>
+          <p>Toda semana: 1 vídeo e 1 post estático ou carrossel, com análises de mercado, economia e educação financeira.</p>
           <ul class="checks">
             <li>Linha editorial e pautas do mês</li>
             <li>Pesquisa, texto e roteiro de cada post</li>
@@ -75,26 +78,26 @@
           </ul>
           <div class="split">
             <div><strong>4</strong><span>vídeos no mês</span></div>
-            <div><strong>8</strong><span>estáticos no mês</span></div>
-            <div><strong>12</strong><span>publicações</span></div>
+            <div><strong>4</strong><span>estáticos no mês</span></div>
+            <div><strong>8</strong><span>publicações</span></div>
           </div>
         </article>
 
-        <article class="glass glass--glow card">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <article class="glass card">
+          <div class="card__icon card__icon--logo" title="Meta"><svg viewBox="0 0 36 24" fill="none" stroke="url(#meta)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="meta" x1="0" y1="0" x2="36" y2="0"><stop offset="0" stop-color="#0064e0"/><stop offset=".5" stop-color="#0082fb"/><stop offset="1" stop-color="#4fb4ff"/></linearGradient></defs><path d="M4 17c0-6 3-11 6.5-11 4.5 0 8.5 12 13 12 3 0 4.5-2.5 4.5-6s-1.5-6-4-6C19.5 6 15 18 10.5 18 6.5 18 4 18 4 17z"/></svg></div>
           <span class="card__eyebrow">Frente 2 · Tráfego pago no Meta</span>
           <h3>Criativos exclusivos para anúncio</h3>
-          <p>Peças pensadas para parar o scroll de quem ainda não te conhece e para convidar quem já te acompanha. A cada 15 dias, avaliamos os resultados e trocamos o vídeo se ele cansar.</p>
+          <p>Peças pensadas para parar o scroll de quem ainda não te conhece e para convidar quem já te acompanha. Toda semana revisamos os números e enviamos um relatório. A cada 15 dias, trocamos o vídeo se ele cansar.</p>
           <ul class="checks">
             <li>Estrutura do funil e dos públicos</li>
             <li>Ganchos fortes nos 3 primeiros segundos</li>
-            <li>Revisão quinzenal e troca de criativos</li>
-            <li>Relatório mensal com leitura dos dados</li>
+            <li>Revisão e relatório toda semana</li>
+            <li>Troca de vídeo a cada 15 dias, se precisar</li>
           </ul>
           <div class="split">
             <div><strong>2</strong><span>vídeos no mês</span></div>
             <div><strong>3</strong><span>estáticos no mês</span></div>
-            <div><strong>2</strong><span>revisões no mês</span></div>
+            <div><strong>4</strong><span>relatórios no mês</span></div>
           </div>
         </article>
       </div>
@@ -111,42 +114,40 @@
         <div class="glass week">
           <div class="week__title">Semana 1</div>
           <div class="week__items">
+            <div class="pill"><i></i>Estático ou carrossel</div>
             <div class="pill pill--video"><i></i>Vídeo</div>
-            <div class="pill"><i></i>Carrossel</div>
-            <div class="pill"><i></i>Estático</div>
-            <div class="pill pill--ads"><i></i>Anúncio · vídeo 1 + 2 estáticos</div>
+            <div class="pill pill--ads"><i></i>Anúncios no ar: vídeo 1 + 2 estáticos</div>
           </div>
         </div>
         <div class="glass week">
           <div class="week__title">Semana 2</div>
           <div class="week__items">
+            <div class="pill"><i></i>Estático ou carrossel</div>
             <div class="pill pill--video"><i></i>Vídeo</div>
-            <div class="pill"><i></i>Carrossel</div>
-            <div class="pill"><i></i>Estático</div>
+            <div class="pill pill--ads"><i></i>Revisão e relatório</div>
           </div>
         </div>
         <div class="glass week">
           <div class="week__title">Semana 3</div>
           <div class="week__items">
+            <div class="pill"><i></i>Estático ou carrossel</div>
             <div class="pill pill--video"><i></i>Vídeo</div>
-            <div class="pill"><i></i>Carrossel</div>
-            <div class="pill"><i></i>Estático</div>
-            <div class="pill pill--ads"><i></i>Revisão · vídeo 2 + 1 estático</div>
+            <div class="pill pill--ads"><i></i>Troca: vídeo 2 + 1 estático</div>
           </div>
         </div>
         <div class="glass week">
           <div class="week__title">Semana 4</div>
           <div class="week__items">
+            <div class="pill"><i></i>Estático ou carrossel</div>
             <div class="pill pill--video"><i></i>Vídeo</div>
-            <div class="pill"><i></i>Carrossel</div>
-            <div class="pill"><i></i>Estático</div>
+            <div class="pill pill--ads"><i></i>Revisão e relatório</div>
           </div>
         </div>
       </div>
       <div class="legend">
         <span><i style="background:var(--glow)"></i>Vídeo orgânico</span>
         <span><i style="background:var(--muted)"></i>Post estático</span>
-        <span><i style="background:#fff"></i>Criativos de anúncio</span>
+        <span><i style="background:#fff"></i>Meta Ads</span>
       </div>
     </section>
 
@@ -210,14 +211,51 @@
       <div class="glass glass--solid bonus">
         <div>
           <span class="tag">Condição especial</span>
-          <h2>Gestão de tráfego pago por nossa conta nos 3 primeiros meses</h2>
-          <p>Estratégia, configuração, acompanhamento e otimização das campanhas sem custo no início do projeto. A verba dos anúncios é investida direto na Meta e definida junto com você.</p>
+          <h2>Primeiro mês de gestão de tráfego pago por nossa conta</h2>
+          <p>Estratégia, configuração, acompanhamento e otimização das campanhas sem custo no primeiro mês. A verba dos anúncios é investida direto na Meta e definida junto com você.</p>
         </div>
         <div class="bonus__big">
-          <strong>3</strong>
-          <span>meses de gestão cortesia</span>
+          <strong>1º</strong>
+          <span>mês de gestão cortesia</span>
         </div>
       </div>
+    </section>
+
+    <!-- ══════════ INVESTIMENTO ══════════ -->
+    <section class="section">
+      <div class="section__head">
+        <span class="tag">Investimento</span>
+        <h2>Quanto custa por mês</h2>
+      </div>
+      <div class="grid-2">
+        <article class="glass price">
+          <span class="price__label">Produção de conteúdo</span>
+          <h3>Captação, edição de vídeo e estáticos</h3>
+          <div class="price__value">R$ 2.100 <small>/ mês</small></div>
+          <ul class="checks">
+            <li>6 vídeos com roteiro, captação e edição</li>
+            <li>7 estáticos ou carrosséis com design</li>
+            <li>Edição completa: áudio, color, legendas, logo e IA</li>
+          </ul>
+        </article>
+        <article class="glass price">
+          <span class="price__label">Gestão de tráfego pago · Meta Ads</span>
+          <h3>Funil, públicos, revisão e relatório semanal</h3>
+          <div class="price__old">R$ 1.000 no 1º mês</div>
+          <span class="price__badge">1º mês cortesia</span>
+          <div class="price__value">R$ 1.000 <small>/ mês a partir do 2º mês</small></div>
+          <ul class="checks">
+            <li>Estrutura do funil e dos públicos</li>
+            <li>Revisão e relatório toda semana</li>
+            <li>Troca de vídeo a cada 15 dias, se precisar</li>
+          </ul>
+        </article>
+      </div>
+      <div class="totals">
+        <div class="glass total"><div><span>Total no</span><strong>1º mês</strong></div><b>R$ 2.100</b></div>
+        <div class="glass glass--solid total"><div><span>Total a partir do</span><strong>2º mês</strong></div><b>R$ 3.100</b></div>
+      </div>
+      <p class="nota-preco">A verba dos anúncios é paga direto à Meta e não está inclusa nos valores acima.</p>
     </section>
 
     <!-- ══════════ MEDIÇÃO ══════════ -->
@@ -244,7 +282,7 @@
         <li class="glass"><div><strong>Aprovação da proposta</strong><span>Alinhamos escopo e data de início.</span></div></li>
         <li class="glass"><div><strong>Imersão</strong><span>Posicionamento, tom de voz, temas e alinhamento com o compliance da XP.</span></div></li>
         <li class="glass"><div><strong>Primeira captação</strong><span>Gravamos os vídeos do mês em uma única sessão.</span></div></li>
-        <li class="glass"><div><strong>No ar</strong><span>Perfil com calendário rodando e anúncios ativos, com revisão a cada 15 dias.</span></div></li>
+        <li class="glass"><div><strong>No ar</strong><span>Perfil com calendário rodando e anúncios ativos, com revisão e relatório toda semana.</span></div></li>
       </ol>
 
       <div class="glass glass--glow cta">
